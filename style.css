@@ -1,0 +1,9 @@
+html {
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 32px;
+  font-family: sans-serif;
+  color: rgb(18, 28, 36);
+}
