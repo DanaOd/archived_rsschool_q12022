@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #0a102c;
+}
+
+li,
+p,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: disc;
+}
+
+.title {
+  font-size: 32px;
+}
+
+.section {
+  width: 90vw;
+  margin: 0px auto;
+  display: flex;
+}
+
+.left-side {
+  background-color: lightblue;
+  flex: 0 0 30vw;
+}
+
+.right-side {
+  background-color: lightgrey;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+}
+
+.code {
+  background-color: gray;
+}

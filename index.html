@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dana's CV</title>
+    <meta property="og:url" content="https://DanaOd.github.io/rsschool-cv/" />
+    <meta property="og:image" content="/myphoto.jpg" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="section">
+    <div class="left-side">
+        <img src="/myphoto.jpg" alt="Danas photo" width="150">
+        
+        <section>
+            <h2>About me</h2>
+            <p>Project manager in Web agency, with experience of leading teams and managing processes of Web development, UX/UI
+                design,
+                and branding.</p>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <div class="sub-section">
+                <h3>Development skills:</h3>
+                <ul>
+                    <li>HTML + CSS;</li>
+                    <li>JS Basics;</li>
+                    <li>Git;</li>
+                </ul>
+                <p><strong>In progress:</strong> SCSS, Responsive, Webpack and Parcell</p>
+            </div>
+                
+            <div class="sub-section">
+                    <h3>Management skills and tools:</h3>
+                    <ul>
+                        <li>working with Notion, Jira, Trello, Asana, ClickUp, Google Docs, Figma and Invision, Miro;</li>
+                        <li>knowledge of web design basics, ability to prototype features and suggest UX-based solutions;</li>
+                    </ul>
+            </div>
+            </section>
+        <h2>English knowledge - B2-C1 (Advanced)</h2>
+        <h2>Contacts</h2>
+        <ul class="contact-list">
+            <li class="list-item">
+                <img class="contact-icon" src="/icons/ant-design_phone-filled.png" alt="phone icon">
+                <p>Phone: (+380) 63-63-154-23</p>
+            </li>
+            <li class="list-item">
+                <img class="contact-icon" src="/icons/clarity_email-solid.png" alt="email icon">
+                <address><a href="mailto:dana.lalovaod@gmail.com">dana.lalovaod@gmail.com</a></address>
+            </li>
+            <li class="list-item">
+                <img class="contact-icon" src="/icons/fa-solid_globe-asia.png" alt="globe icon">
+                <address>Address: Odessa, Ukraine</address>
+            </li>
+            <li class="list-item">
+                <img class="contact-icon" src="/icons/akar-icons_discord-fill.png" alt="discord icon">
+                <p>Discord: DanaOd (danaod)#9476</p>
+            </li>
+        </ul>
+    </div>
+    <div class="right-side">
+        <h1 class="title">Dana Lalova</h1>
+        <section>
+        <h2>Working experience</h2>
+        <h3>Head Of Project Management Nov 2020 - Present</h3>
+            <ul>
+                <li>interviewing for open positions (Hired 6 project managers to our team);</li>
+                <li>onboarding documentation and mentoring;</li>
+                <li>management processes revision and improvements;</li>
+                <li>resource planning;</li>
+                <li>managing current projects</li>
+            </ul>
+            <h3>Project Manager Apr 2018 - Present</h3>
+                <ul>
+                    <li>planning and defining the _scope of projects_ and scheduling;</li>
+                    <li>defining the priorities, working on <em>Scrum</em> and <em>Kanban</em>;</li>
+                    <li>leading team of designers and developers on full project lifecycle - from research, till release and
+                        support;</li>
+                    <li>elaboration and clarification of specifications and project changes;</li>
+                    <li> <em>documentation</em> (user stories/acceptance criteria, feature-list, technical specification, Userflow,
+                        roadmaps, resource planning, etc);</li>
+                    <li>leading different types of projects: Branding creation, Web and Mobile design, Illustrations, 3d-modelling
+                        and motion design, Web development (Front-end, WordPress/CMS connection, cooperation with Back-end);</li>
+                    <li><em>communication</em> with the client and stakeholders: kick-off and demo meetings, weekly planning,
+                        follow-ups; progress, plans, features and risks discussion; set customer expectations;</li>
+                    <li>basic testing and design-review, preparing bugs reports;</li>
+                    <li><em>controlling</em> the quality of the process, deliverables and estimates;</li>
+                    <li>simultaneous management of several projects, communication through different timezones and countries (USA,
+                    Europe, China, Australia);</li>
+                </ul>
+        </section>
+        <section>
+            <h2>Education</h2>        
+            <ul class="light-text-color">
+                <li>Masters degree at Odessa National Marine university. 2008-2014</li>
+                <li>Projector school. Web design. Basics. 2019</li>
+                <li>Development:</li>
+                <ul>
+                    <li>Go IT. HTML + CSS. 2020</li>
+                    <li>Go IT. JS Basics. 2021</li>
+                    <li>Brain academy. Java basics. 2016</li>
+                </ul>
+            </ul>
+            <h3>Code Example</h3>
+            <code class="code">
+                <pre>
+                function squareDigits(num){
+                let stringDigits = String(num).split("");
+                
+                return Number(stringDigits.map(numb => {
+                numb = Number(numb);
+                let square = numb * numb;
+                let total = "";
+                total+= square;
+                return total;
+                }).reduce((acc, value) => acc + value));
+                }
+                </pre>
+            </code>
+        </section>
+    </div>
+    
+    </main>
+    <footer class="section">
+<!--  footer есть ссылка на гитхаб автора работы, год создания приложения, 
+    логотип курса со ссылкой на курс +10
+Если ссылка в футере ведёт на курс stage0, это не ошибка. -->
+    </footer>
+    
+</body>
+</html>
