@@ -1,10 +1,16 @@
-html {
+* {
   box-sizing: border-box;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
   padding: 0;
   margin: 0;
+
   font-size: 16px;
   font-family: sans-serif;
   color: #0a102c;
