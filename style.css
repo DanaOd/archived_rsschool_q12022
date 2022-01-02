@@ -7,3 +7,20 @@ html {
   font-family: sans-serif;
   color: #0a102c;
 }
+
+.section {
+  width: 90vw;
+  margin: 10px auto;
+  background-color: aquamarine;
+  display: flex;
+}
+
+.left-side {
+  width: 30vw;
+  background-color: palevioletred;
+}
+
+.right-side {
+  /* width: auto; */
+  background-color: peru;
+}
