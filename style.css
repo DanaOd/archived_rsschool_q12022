@@ -1,3 +1,9 @@
+:root {
+  --background-color-main: #dbfdff;
+  --background-color-secondary: #f0e7e8;
+  --text-color: #0a102c;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,8 +18,8 @@ body {
   margin: 0;
 
   font-size: 16px;
-  font-family: sans-serif;
-  color: #0a102c;
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-color);
 }
 
 li,
@@ -40,12 +46,14 @@ ul {
 }
 
 .left-side {
-  background-color: lightblue;
+  background-color: var(--background-color-main);
   flex: 0 0 30vw;
+  padding: 10px;
 }
 
 .right-side {
-  background-color: lightgrey;
+  background-color: var(--background-color-secondary);
+  padding: 10px;
 }
 
 .contact-icon {
@@ -61,4 +69,9 @@ ul {
 
 .code {
   background-color: gray;
+}
+
+.header {
+  background-color: #dbfdff;
+  display: inline;
 }
