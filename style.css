@@ -20,7 +20,7 @@ h4 {
 }
 
 ul {
-  list-style: none;
+  list-style: disc;
 }
 
 .title {
@@ -51,4 +51,8 @@ ul {
 .list-item {
   display: flex;
   align-items: center;
+}
+
+.code {
+  background-color: gray;
 }
