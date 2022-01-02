@@ -14,23 +14,24 @@
 </head>
 <body>
     <header class="header">
-        <nav>
-            <ul class="nav-list">
-                <li><a href="#profile" class="nav-item-link">profile</a></li>
-                <li><a href="#skills" class="nav-item-link">Skills</a></li>
-                <li><a href="#english" class="nav-item-link">English</a></li>
-                <li><a href="#contacts" class="nav-item-link">Contacts</a></li>
-                <li><a href="#Working_Experience" class="nav-item-link">Working Experience</a></li>
-                <li><a href="#education" class="nav-item-link">Education</a></li>
-                <li><a href="" class="nav-item-link"></a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#profile" class="nav-item-link">profile</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-item-link">Skills</a></li>
+                    <li class="nav-item"><a href="#english" class="nav-item-link">English</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-item-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#Working_Experience" class="nav-item-link">Working Experience</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-item-link">Education</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="content">
+    <main class="container">
         <div class="left-side">
             <section class="section" id="profile">
-                <img class="photo" src="./myphoto.png" alt="Danas photo" width="200">
+                <img class="photo" src="./myphoto.png" alt="Danas photo" width="300">
                 <h2>About me</h2>
                 <p>Project manager in Web agency, with experience of leading teams and managing processes of Web development, UX/UI design,and branding.</p>
             </section>
@@ -93,16 +94,16 @@
             <h1 class="title">Dana Lalova</h1>
             <section class="section" id="#Working_Experience">
             <h2>Working experience</h2>
-                <h3>Head Of Project Management Nov 2020 - Present</h3>
+                <h3 class="subsection-title">Head Of Project Management Nov 2020 - Present</h3>
                 <ul>
-                    <li>interviewing for open positions (Hired 11 project managers to our team);</li>
+                    <li>interviewing for open positions (hired 11 project managers to our team);</li>
                     <li>created onboarding documentation for managers and mentored rookies;</li>
                     <li>management processes revision and improvements;</li>
                     <li>resource planning;</li>
                     <li>troubleshooting;</li>
                     <li>managing current projects</li>
                 </ul>
-                <h3>Project Manager Apr 2018 - Present</h3>
+                <h3 class="subsection-title">Project Manager Apr 2018 - Present</h3>
                 <ul>
                     <li>planning and defining the _scope of projects_ and scheduling;</li>
                     <li>defining the priorities, working on <em>Scrum</em> and <em>Kanban</em>;</li>
@@ -132,7 +133,7 @@
                         <li>Brain academy. Java basics. 2016</li>
                     </ul>
                 </ul>
-                <h3>Code Example</h3>
+                <h3 class="subsection-title">Code Example</h3>
                 <code class="code">
                     <pre>
                     function squareDigits(num){
@@ -148,13 +149,28 @@
                     }
                     </pre>
                 </code>
-                <h3>My projects</h3>
-                <a href="https://github.com/DanaOd/designee_landing">Designee landing page</a></p>
+                <h3 class="subsection-title">My projects</h3>
+                <ul>
+                    <li><a href="https://github.com/DanaOd/designee_landing">Designee landing page</a></li>
+                    <li><a href="https://www.codewars.com/users/DanaOd">Codewars profile</a></li>
+                </ul>
             </section>
         </div>
     
     </main>
-    <footer class="section">
+    <footer class="container footer">
+        <div>
+            <a href="https://github.com/DanaOd" class="github">
+                <img class="contact-icon" src="./assets/icons/ant-design_github-filled.png" alt="github icon" width="24" height="24">
+                <p>Github</p>
+            </a>
+        </div>
+        <div>
+            <a href="https://rs.school/js/" class="github">
+                <img class="rs-logo" src="./assets/logos/rs_school_js.svg" alt="RS school logo" >
+                <p>Join JS course in February</p>
+            </a>
+        </div>
 <!--  footer есть ссылка на гитхаб автора работы, год создания приложения, 
     логотип курса со ссылкой на курс +10
 Если ссылка в футере ведёт на курс stage0, это не ошибка. -->
