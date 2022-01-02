@@ -31,6 +31,16 @@ h4 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #e39ea6;
+  border-bottom: solid 1px #e39ea6;
+}
+
 ul {
   list-style: disc;
 }
@@ -39,10 +49,13 @@ ul {
   font-size: 32px;
 }
 
-.section {
-  width: 90vw;
-  margin: 0px auto;
+/* .section {
+} */
+
+.content {
   display: flex;
+  max-width: 1440px;
+  margin: 0px auto;
 }
 
 .left-side {
@@ -74,4 +87,16 @@ ul {
 .header {
   background-color: #dbfdff;
   display: inline;
+  height: 80px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-item {
+  padding: 5px 5px 5px 0;
+  text-transform: capitalize;
 }
