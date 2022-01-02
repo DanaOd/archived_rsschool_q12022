@@ -1,6 +1,7 @@
 :root {
-  --background-color-main: #dbfdff;
+  --background-color-main: #fffefa;
   --background-color-secondary: #f0e7e8;
+  --accent-color: #e39ea6;
   --text-color: #21201e;
 }
 
@@ -39,8 +40,8 @@ a {
 }
 
 a:hover {
-  color: #e39ea6;
-  border-bottom: solid 1px #e39ea6;
+  color: var(--accent-color);
+  border-bottom: solid 1px var(--accent-color);
   cursor: pointer;
 }
 
@@ -58,9 +59,12 @@ ul {
 
 .section-title {
   margin-bottom: 20px;
+  padding-bottom: 5px;
   font-size: 24px;
   line-height: 150%;
   font-weight: 600;
+
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .subsection-title {
@@ -76,39 +80,17 @@ ul {
 .container {
   display: flex;
   max-width: 1440px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
-.left-side {
-  background-color: var(--background-color-main);
-  /* flex: 0 0 30vw; */
-}
-
-.right-side {
-  background-color: var(--background-color-secondary);
-}
-
-.contact-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-}
-
-.list-item {
-  display: flex;
-  align-items: center;
-}
-
-.code {
-  background-color: gray;
-}
+/* HEADER */
 
 .header {
   display: flex;
   justify-content: flex-end;
   /* max-width: 1440px; */
   height: 80px;
-  background-color: #dbfdff;
+  background-color: var(--background-color-main);
 }
 
 .navigation {
@@ -133,17 +115,59 @@ ul {
   padding-bottom: 10px;
 }
 
-.nav-item:last-child {
+/* .nav-item:last-child {
   padding-right: 0px;
-}
+} */
 
 .nav-item-link {
   text-transform: capitalize;
 }
 
-.photo {
-  margin: 20px;
+/* LEFT SIDE */
+
+.left-side {
+  background-color: var(--background-color-main);
+  /* flex: 0 0 30vw; */
 }
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list-item a:hover {
+  text-decoration: none;
+}
+
+/*  PROFILE */
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo {
+  margin: 20px auto;
+  /* align-self: center; */
+}
+
+/* RIGHT SIDE */
+
+.right-side {
+  background-color: var(--background-color-secondary);
+}
+
+.code {
+  background-color: gray;
+}
+
+/* FOOTER */
 
 .github {
   display: flex;
@@ -153,11 +177,26 @@ ul {
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  background-color: var(--background-color-main);
 }
 
 .rs-logo {
   width: 80px;
   margin: 20px 10px;
+}
+
+.svg-icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  transition-duration: 500ms;
+}
+
+.svg-icon:hover {
+  fill: var(--accent-color);
 }

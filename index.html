@@ -30,13 +30,13 @@
 
     <main class="container">
         <div class="left-side">
-            <section class="section" id="profile">
+            <section class="section profile" id="profile">
                 <img class="photo" src="./myphoto.png" alt="Danas photo" width="300">
-                <h2>About me</h2>
+                <h2 class="section-title">About me</h2>
                 <p>Project manager in Web agency, with experience of leading teams and managing processes of Web development, UX/UI design,and branding.</p>
             </section>
             <section class="section" id="skills">
-                <h2>Skills</h2>
+                <h2 class="section-title">Skills</h2>
                 <div>
                     <h3>Development skills:</h3>
                     <ul>
@@ -56,7 +56,7 @@
                 </div>
             </section>
             <section class="section" id="english">
-                <h2>English knowledge</h2>
+                <h2 class="section-title">English knowledge</h2>
                 <p><strong>B2-C1 (Advanced)</strong></p>
                 <ul>
                     <li>Greenforest English school. IELTS preparation course;</li>
@@ -65,26 +65,39 @@
                 </ul>
             </section>
             <section class="section" id="contacts">
-                <h2>Contacts</h2>
+                <h2 class="section-title">Contacts</h2>
                 <ul class="contact-list">
                     <li class="list-item">
-                        <img class="contact-icon" src="./assets/icons/ant-design_phone-filled.png" alt="phone icon">
+                            <svg class="svg-icon">
+                                <use href="./assets/icons/svg/symbol-defs.svg#icon-phone"></use>
+                            </svg>
                         <p>Phone: (+380) 63-63-154-23</p>
                     </li>
                     <li class="list-item">
-                        <img class="contact-icon" src="./assets/icons/clarity_email-solid.png" alt="email icon">
+                        <svg class="svg-icon">
+                            <use href="./assets/icons/svg/symbol-defs.svg#icon-email"></use>
+                        </svg>
+                        <!-- <img class="contact-icon" src="./assets/icons/clarity_email-solid.png" alt="email icon"> -->
                         <address><a href="mailto:dana.lalovaod@gmail.com">dana.lalovaod@gmail.com</a></address>
                     </li>
                     <li class="list-item">
-                        <img class="contact-icon" src="./assets/icons/fa-solid_globe-asia.png" alt="globe icon">
+                        <svg class="svg-icon">
+                            <use href="./assets/icons/svg/symbol-defs.svg#icon-globe"></use>
+                        </svg>
+                        <!-- <img class="contact-icon" src="./assets/icons/fa-solid_globe-asia.png" alt="globe icon"> -->
                         <address>Address: Odessa, Ukraine</address>
                     </li>
                     <li class="list-item">
-                        <img class="contact-icon" src="./assets/icons/akar-icons_discord-fill.png" alt="discord icon">
+                        <svg class="svg-icon">
+                            <use href="./assets/icons/svg/symbol-defs.svg#icon-discord"></use>
+                        </svg>
+                        <!-- <img class="contact-icon" src="./assets/icons/akar-icons_discord-fill.png" alt="discord icon"> -->
                         <p>Discord: DanaOd (danaod)#9476</p>
                     </li>
                     <li class="list-item">
-                        <a href="https://www.linkedin.com/in/dana-lalova-76846083"><img class="contact-icon" src="./assets/icons/akar-icons_linkedin-fill.png" alt="linkedin icon"></a>
+                        <svg class="svg-icon">
+                            <use href="./assets/icons/svg/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
                         <a href="https://www.linkedin.com/in/dana-lalova-76846083"><p>LinkedIn profile</p></a>
                     </li>
                 </ul>
@@ -92,8 +105,8 @@
         </div>
         <div class="right-side">
             <h1 class="title">Dana Lalova</h1>
-            <section class="section" id="#Working_Experience">
-            <h2>Working experience</h2>
+            <section class="section" id="Working_Experience">
+            <h2 class="section-title">Working experience</h2>
                 <h3 class="subsection-title">Head Of Project Management Nov 2020 - Present</h3>
                 <ul>
                     <li>interviewing for open positions (hired 11 project managers to our team);</li>
@@ -121,8 +134,8 @@
                         Europe, China, Australia);</li>
                 </ul>
             </section>
-            <section class="section" id="#education">
-                <h2>Education</h2>        
+            <section class="section">
+                <h2 class="section-title" id="education">Education</h2>        
                 <ul class="light-text-color">
                     <li>Masters degree at Odessa National Marine university. 2008-2014</li>
                     <li>Projector school. Web design. Basics. 2019</li>
@@ -132,6 +145,11 @@
                         <li>Go IT. JS Basics. 2021</li>
                         <li>Brain academy. Java basics. 2016</li>
                     </ul>
+                </ul>
+                <h3 class="subsection-title">My projects</h3>
+                <ul>
+                    <li><a href="https://github.com/DanaOd/designee_landing">Designee landing page</a></li>
+                    <li><a href="https://www.codewars.com/users/DanaOd">Codewars profile</a></li>
                 </ul>
                 <h3 class="subsection-title">Code Example</h3>
                 <code class="code">
@@ -149,16 +167,13 @@
                     }
                     </pre>
                 </code>
-                <h3 class="subsection-title">My projects</h3>
-                <ul>
-                    <li><a href="https://github.com/DanaOd/designee_landing">Designee landing page</a></li>
-                    <li><a href="https://www.codewars.com/users/DanaOd">Codewars profile</a></li>
-                </ul>
+                
             </section>
         </div>
     
     </main>
     <footer class="container footer">
+        
         <div>
             <a href="https://github.com/DanaOd" class="github">
                 <img class="contact-icon" src="./assets/icons/ant-design_github-filled.png" alt="github icon" width="24" height="24">
@@ -171,9 +186,7 @@
                 <p>Join JS course in February</p>
             </a>
         </div>
-<!--  footer есть ссылка на гитхаб автора работы, год создания приложения, 
-    логотип курса со ссылкой на курс +10
-Если ссылка в футере ведёт на курс stage0, это не ошибка. -->
+        
     </footer>
     
 </body>
