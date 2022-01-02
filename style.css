@@ -1,7 +1,7 @@
 :root {
   --background-color-main: #dbfdff;
   --background-color-secondary: #f0e7e8;
-  --text-color: #0a102c;
+  --text-color: #21201e;
 }
 
 * {
@@ -34,6 +34,7 @@ h4 {
 a {
   text-decoration: none;
   color: inherit;
+  transition-duration: 300ms;
 }
 
 a:hover {
@@ -49,8 +50,15 @@ ul {
   font-size: 32px;
 }
 
-/* .section {
-} */
+.section-title {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 600;
+}
+
+.section {
+  margin: 50px 10px;
+}
 
 .content {
   display: flex;
@@ -96,7 +104,7 @@ ul {
   list-style: none;
 }
 
-.nav-item {
+.nav-item-link {
   padding: 5px 5px 5px 0;
   text-transform: capitalize;
 }
