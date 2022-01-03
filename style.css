@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+address {
+  font-style: normal;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -170,6 +174,10 @@ ul {
   display: flex;
   align-items: center;
   margin-right: 50px;
+}
+
+.github .svg-icon:hover {
+  text-decoration: none;
 }
 
 .footer {
